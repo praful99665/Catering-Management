@@ -227,3 +227,8 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doc_events = {
+    "Sales Invoice": {
+        "on_submit": "catering.sales_invoice.create_event_todo"
+    }
+}

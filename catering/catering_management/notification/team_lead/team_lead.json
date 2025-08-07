@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status==\"Open\"",
+ "creation": "2025-08-07 16:10:44.848706",
+ "date_changed": "custom_event_date",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "ToDo",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear {{ doc.custom_team_lead }},\n\nPlease find the event details below:\n\nEvent Type: {{ doc.custom_event_type }}  \nVenue: {{ doc.custom_venue }}  \nGuest Count: {{ doc.custom_guest_count }}  \nEvent Date: {{ doc.custom_event_date }}  \nEvent Time: {{ doc.custom_event_time }}\n\nKindly ensure all arrangements are made accordingly.\n\nBest regards\n",
+ "modified": "2025-08-07 16:12:00.440962",
+ "modified_by": "Administrator",
+ "module": "Catering Management",
+ "name": "team lead",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "allocated_to"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Webeaz",
+ "sender_email": "praful99665@gmail.com",
+ "subject": "Upcoming Event: {{ doc.custom_event_type}} On {{doc.custom_event_date}}"
+}
